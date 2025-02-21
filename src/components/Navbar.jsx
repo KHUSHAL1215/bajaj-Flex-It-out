@@ -8,7 +8,10 @@ export const Navbar = () => {
       <img src={logo} alt="Logo" className='h-16' />
       <div className='flex space-x-10 text-white text-lg uppercase'>
         <NavLink to="/home" className='text-white text-sm sm:text-lg uppercase font-semibold transition duration-300 hover:text-red-500 hover:scale-110'>Home</NavLink>
+        <NavLink to="/rankings" className='text-white text-sm sm:text-lg uppercase font-semibold transition duration-300 hover:text-red-500 hover:scale-110'>Rankings</NavLink>
         <NavLink to="/aboutus" className='text-white text-sm sm:text-lg uppercase font-semibold transition duration-300 hover:text-red-500 hover:scale-110'>About Us</NavLink>
+        <NavLink to="/feedback" className='text-white text-sm sm:text-lg uppercase font-semibold transition duration-300 hover:text-red-500 hover:scale-110'>Feedback</NavLink>
+
         <NavLink to="/account" className='text-white text-sm sm:text-lg uppercase font-semibold transition duration-300 hover:text-red-500 hover:scale-110'>Account</NavLink>
       </div>
     </div>

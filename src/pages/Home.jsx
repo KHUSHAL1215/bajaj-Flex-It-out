@@ -15,7 +15,7 @@ export const Home = () => {
           <img src={logo} alt="Logo" className="h-14 sm:h-16" />
         </div>
         <div className="flex items-center space-x-6 sm:space-x-10">
-          {["Home", "About Us", "Account"].map((item, index) => (
+          {["Home","Rankings","About Us", "Feedback" ,"Account"].map((item, index) => (
             <NavLink
               key={index}
               to={`/${item.toLowerCase().replace(" ", "")}`}

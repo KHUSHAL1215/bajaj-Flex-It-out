@@ -6,13 +6,13 @@ dotenv.config({path: './config.env'});
 
 
 const port = process.env.PORT;
-// const dataBase = process.env.DATABASE;
-const localDataBase = process.env.DATABASE_LOCAL;
+const dataBase = process.env.DATABASE;
+// const localDataBase = process.env.DATABASE_LOCAL;
 // console.log(localDataBase);
 // const password = process.env.DATABASE_PASSWORD; 
 
-// mongoose.connect(dataBase).then(
-    mongoose.connect(localDataBase).then(() => {
+mongoose.connect(dataBase).then( () =>{
+    // mongoose.connect(localDataBase).then(() => {
         console.log("DATABASE CONNECTION SUCCESSFULL!");
     }).catch((err) => {
         console.error("Database Connection Failed! ❌", err); 

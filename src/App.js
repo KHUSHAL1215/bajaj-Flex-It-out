@@ -8,7 +8,8 @@ import { Squats } from "./pages/Squats";
 import { Curl } from "./pages/Curl";
 import { About } from "./pages/About";
 import { Account } from "./pages/Account";
-
+import { Ranking } from "./pages/Ranking";
+import { Feedback } from "./pages/Feedback";
 function App() {
   return (
       <div className="App ">
@@ -22,6 +23,9 @@ function App() {
           <Route path="/Squat" element={<Squats />} />
           <Route path="/Curl" element={<Curl />} />
           <Route path="/aboutus" element={<About/>}></Route> 
+          <Route path="/rankings" element={<Ranking/>} ></Route>
+          <Route path="/feedback" element={<Feedback/>} ></Route>
+
         </Routes>
       </div>
   );
